@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2fb88f88f886064c8533cb882aa736d, type: 3}
+  m_Name: F_Dark elf Boots_Slot
+  m_EditorClassIdentifier: 
+  slotName: F_Dark elf Boots
+  _UMA: {fileID: 11400000, guid: ea62e2fd3a46f7f40b43655ceb6ac6f7, type: 2}
+  PhysicsUMASlot: {fileID: 0}
+  _UMAslotName: 
+  Active: 1
+  AvailableAtStart: 1
+  Place: {fileID: 11400002, guid: adb5afcd4ea79fe4dada70c896952dde, type: 2}
+  PlaceName: FeetWear
+  RequieresSubElements: 0
+  Race:
+  - Goblin
+  - HumanAfrica
+  - HumanOccidental
+  - HumanAsia
+  - Orc
+  - Human Undead
+  - Human Zombie
+  Gender: Female
+  OverlayType: FeetWear
+  WearWeight: Heavy
+  Default: 0
+  Replace: 1
+  _HideData:
+    HideMouth: 0
+    HideEars: 0
+    HideBeard: 0
+    HideHair: 0
+    HideHairModule: 0
+    HideShoulders: 0
+    HideLegs: 0
+    HideBelt: 0
+    HideArmBand: 0
+    HideWrist: 0
+    HideCollar: 0
+    HideLegBand: 0
+    HideRingLeft: 0
+    HideRingRight: 0
+    HideCloak: 0
+    HideBackpack: 0
+    HideUnderwear: 0
+    ReduceNoze: 0
+    ReduceTits: 0
+  MeshHideRules:
+    MeshHideDatasList: []
+  LinkedOverlayList:
+  - {fileID: 11400000, guid: 3c84457d5c5ba7543af7449eac8cd47d, type: 2}
+  _LOD:
+    IsLOD0: 1
+    LOD1: {fileID: 0}
+    LOD2: {fileID: 0}
+    LOD3: {fileID: 0}
+    MasterLOD: {fileID: 0}
+  _LegacyData:
+    HasLegacy: 0
+    LegacyList: []
+    IsLegacy: 0
+    ElderList: []
+    Replace: 0
+  overlayScale: 1
+  Elem: 0
+  meshRenderer: {fileID: 0}
+  Preview: {fileID: 0}
+  materialSample: {fileID: 0}
+  umaBoneData: []
+  overlayList: []
