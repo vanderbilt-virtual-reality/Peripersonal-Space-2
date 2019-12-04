@@ -9,13 +9,12 @@ public class RoomChange : MonoBehaviour
     public int currentRoom = 1;
     public string currentAvatar = "";
     public static string fileName;
-    public string getFileName;
+    private string resultsPath = "results.txt";
     void Start()
     {
-        fileName = getFileName;
-        if (!File.Exists(fileName))
-            File.Create(fileName);
-        File.WriteAllText(fileName, "file " + System.DateTime.Now + System.Environment.NewLine + System.Environment.NewLine);
+        if (!File.Exists(resultsPath))
+            File.Create(resultsPath);
+        File.WriteAllText(resultsPath, "file " + System.DateTime.Now + System.Environment.NewLine + System.Environment.NewLine);
     }
 
     // Update is called once per frame
@@ -26,9 +25,11 @@ public class RoomChange : MonoBehaviour
         {
             if (currentAvatar != GetComponent<HapticFeedback>().currentAvatar)
             {
-                File.AppendAllText(fileName, "Avatar: " + GetComponent<HapticFeedback>().currentAvatar + System.Environment.NewLine
+                StreamWriter writer = new StreamWriter(resultsPath, true);
+                writer.WriteLine("Avatar: " + GetComponent<HapticFeedback>().currentAvatar + System.Environment.NewLine
                     + "Reaction Time: " + GetComponent<HapticFeedback>().reactionTime + System.Environment.NewLine
                     + "Room Number: " + currentRoom + System.Environment.NewLine);
+                writer.Close();
                 currentAvatar = GetComponent<HapticFeedback>().currentAvatar;
             }
         } else if (OVRInput.Get(OVRInput.Button.Two))
