@@ -1,22 +1,2 @@
-file 12/5/2019 12:05:41 PM
-
-Avatar: Female
-Reaction Time: 1.108858
-Distance from user: 1.20594489574432
-Room Number: 1
-
-Avatar: Male
-Reaction Time: 0.748209
-Distance from user: 1.40867400169373
-Room Number: 1
-
-Avatar: Robot1
-Reaction Time: 0.7496796
-Distance from user: 1.42282342910767
-Room Number: 1
-
-Avatar: StoneMonster
-Reaction Time: 0.873867
-Distance from user: 1.25117766857147
-Room Number: 1
+file 12/7/2019 8:38:55 PM
 
